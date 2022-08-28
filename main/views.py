@@ -9,7 +9,7 @@ infura_url='https://mainnet.infura.io/v3/c0e47c38ff3740b59fd9ac1354e2a96a'
 w3 = Web3(Web3.HTTPProvider(infura_url))
 # Create your views here.
 
-knn = KNeighborsClassifier(n_neighbors=5)
+knn = KNeighborsClassifier(n_neighbors=1)
 data = pd.read_csv("/home/adhok/Hackathon/main/FinalData.csv")
 x = ["TopHolding", "ContractRatio"]
 y = ["scam"]
